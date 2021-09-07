@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Jamesjohnmcguire\\ConsumerProvider\\": "src/"
+            "Jamesjohnmcguire\\ConsumerProvider\\": "SourceCode/"
         }
     },
     "authors": [
