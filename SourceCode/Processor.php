@@ -1,4 +1,6 @@
 <?php
+namespace digitalzenworks\ConsumerProvider;
+
 define("BASE_PATH", __DIR__);
 
 class Processor

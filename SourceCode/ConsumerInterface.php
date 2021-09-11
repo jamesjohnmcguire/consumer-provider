@@ -1,4 +1,5 @@
 <?php
+namespace digitalzenworks\ConsumerProvider;
 
 interface ConsumerInterface
 {
