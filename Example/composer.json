@@ -1,0 +1,5 @@
+{
+    "require": {
+        "digitalzenworks/consumer-provider": "^1.0"
+    }
+}
