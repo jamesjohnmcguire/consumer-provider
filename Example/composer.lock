@@ -1,0 +1,65 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "48d27153ec842520e04e506c7f4043fb",
+    "packages": [
+        {
+            "name": "digitalzenworks/consumer-provider",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jamesjohnmcguire/consumer-provider.git",
+                "reference": "73ff4ad867ee3c00bd5bc0ec566bea75d5b8d899"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jamesjohnmcguire/consumer-provider/zipball/73ff4ad867ee3c00bd5bc0ec566bea75d5b8d899",
+                "reference": "73ff4ad867ee3c00bd5bc0ec566bea75d5b8d899",
+                "shasum": ""
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "*",
+                "php-parallel-lint/php-parallel-lint": "^1.2.0",
+                "phpcompatibility/php-compatibility": "*",
+                "phpcsstandards/phpcsdevtools": "^1.0",
+                "phpstan/phpstan": "^0.12.87",
+                "phpunit/phpunit": "^9.1",
+                "squizlabs/php_codesniffer": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "digitalzenworks\\ConsumerProvider\\": "SourceCode/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James John McGuire",
+                    "email": "jamesjohnmcguire@gmail.com"
+                }
+            ],
+            "description": "A package providing an interface to allow a provider object to feed a consumer object.",
+            "support": {
+                "issues": "https://github.com/jamesjohnmcguire/consumer-provider/issues",
+                "source": "https://github.com/jamesjohnmcguire/consumer-provider/tree/1.0.6"
+            },
+            "time": "2021-09-17T10:55:58+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}
