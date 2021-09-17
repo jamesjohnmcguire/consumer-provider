@@ -1,11 +1,11 @@
 {
-    "name": "jamesjohnmcguire/consumer-provider",
+    "name": "digitalzenworks/consumer-provider",
     "description": "A package providing an interface to allow a provider object to feed a consumer object.",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Jamesjohnmcguire\\ConsumerProvider\\": "SourceCode/"
+            "digitalzenworks\\ConsumerProvider\\": "SourceCode/"
         }
     },
     "authors": [
