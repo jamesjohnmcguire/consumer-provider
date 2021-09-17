@@ -1,0 +1,26 @@
+Tasks
+	Tasks Finished
+		move actual source code to SourceCode
+		Update composer.json to use SourceCode
+		Add namespaces
+		Add example
+		Update example
+		Test example
+		Add PHP sniff packages
+		Add build with sniff	where?
+		Add file headers documentation
+		Update readme to include SourceCode
+		Add additional notes to readme
+		git tag
+		review resource pages
+		The name of the package
+		submit to package registry	https://packagist.org/packages/submit
+		Update readme to include composer
+		Add Github integration to package registry
+		sanitize example
+		Commit with example
+Issues
+	Move code out of SourceCode?
+packagist.org
+	https://packagist.org/packages/digitalzenworks/consumer-provider
+	https://packagist.org/api/update-package?username=jamesjohnmcguire
