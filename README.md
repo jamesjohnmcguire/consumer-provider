@@ -7,3 +7,6 @@ composer require digitalzenworks/consumer-provider
 
 ## Usage:
 vendor/digitalzenworks/consumer-provider/SourceCode/process &lt;Consumer Class Name&gt; &lt;Provider Class Name&gt;
+
+## Example:
+There is an example in the Example directory.
