@@ -1,15 +1,14 @@
-ConsumerProvider
-	Tasks
-		Tasks Finished
-			move actual source code to SourceCode
-			Update composer.json to use SourceCode
-			Add namespaces
-			Add example
-			Update example
-			Test example
-			Add PHP sniff packages
-			Add build with sniff	where?
-			Add file headers documentation
+Tasks
+	Tasks Finished
+		move actual source code to SourceCode
+		Update composer.json to use SourceCode
+		Add namespaces
+		Add example
+		Update example
+		Test example
+		Add PHP sniff packages
+		Add build with sniff	where?
+		Add file headers documentation
 		Update readme to include SourceCode
 		Add additional notes to readme
 		git tag
@@ -20,8 +19,8 @@ ConsumerProvider
 		Add Github integration to package registry
 		sanitize example
 		Commit with example
-	Issues
-		Move code out of SourceCode?
-	packagist.org
-		https://packagist.org/packages/digitalzenworks/consumer-provider
-		https://packagist.org/api/update-package?username=jamesjohnmcguire
+Issues
+	Move code out of SourceCode?
+packagist.org
+	https://packagist.org/packages/digitalzenworks/consumer-provider
+	https://packagist.org/api/update-package?username=jamesjohnmcguire
