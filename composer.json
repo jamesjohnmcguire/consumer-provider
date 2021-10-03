@@ -1,20 +1,23 @@
 {
-    "name": "digitalzenworks/consumer-provider",
-    "description": "A package providing an interface to allow a provider object to feed a consumer object.",
-    "type": "library",
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "digitalzenworks\\ConsumerProvider\\": "SourceCode/"
-        }
-    },
-    "authors": [
-        {
-            "name": "James John McGuire",
-            "email": "jamesjohnmcguire@gmail.com"
-        }
-    ],
-    "require": {},
+	"description": "A package providing an interface to allow a provider object to feed a consumer object.",
+	"name": "digitalzenworks/consumer-provider",
+	"homepage": "https://github.com/jamesjohnmcguire/consumer-provider/",
+	"license": "MIT",
+	"minimum-stability": "dev",
+	"type": "library",
+	"version": "1.0.9",
+	"authors": [
+		{
+			"name": "James John McGuire",
+			"email": "jamesjohnmcguire@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"digitalzenworks\\ConsumerProvider\\": "SourceCode/"
+		}
+	},
+	"require": {},
 	"require-dev": {
 		"dealerdirect/phpcodesniffer-composer-installer": "*",
 		"php-parallel-lint/php-parallel-lint": "^1.2.0",
