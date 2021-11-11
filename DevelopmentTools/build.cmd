@@ -1,5 +1,5 @@
 CD %~dp0
-CD ..\..\SourceCode
+CD ..\SourceCode
 
 ECHO PHP code styles
 CALL ..\vendor\bin\phpcs -sp --standard=ruleset.xml .

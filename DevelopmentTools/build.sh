@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ../../SourceCode
+cd ../SourceCode
 
 echo PHP code styles
 ../vendor/bin/phpcs -sp --standard=ruleset.xml .
