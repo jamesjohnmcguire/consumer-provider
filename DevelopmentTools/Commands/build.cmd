@@ -5,4 +5,5 @@ ECHO PHP code styles
 CALL ..\vendor\bin\phpcs -sp --standard=ruleset.xml .
 
 CD ..
-CALL phpdocumentor --setting=graphs.enabled=true -d SourceCode -t Documentation
+REM Currently, not working on windows - phpdocumentor bug
+REM CALL phpdocumentor --setting=graphs.enabled=true -d SourceCode -t Documentation
