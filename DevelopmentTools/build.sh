@@ -31,6 +31,9 @@ if [[ $1 == "release" ]] ; then
 		exit 1
 	fi
 
+	git checkout main
+	git merge --no-ff development
+
 	git tag $2
 	git push --tags
 	git push --all
