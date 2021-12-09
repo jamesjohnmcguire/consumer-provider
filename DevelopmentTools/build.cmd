@@ -25,11 +25,14 @@ REM CALL phpdocumentor --setting=graphs.enabled=true -d SourceCode -t Documentat
 if "%~2"=="" GOTO error1
 if "%~3"=="" GOTO error2
 
+git checkout main
+git merge --no-ff development
+
 git tag %2
 git push --tags
 git push --all
 
-gh release create %2 --notes "%3"
+gh release create %2 --notes %3
 
 GOTO end
 
