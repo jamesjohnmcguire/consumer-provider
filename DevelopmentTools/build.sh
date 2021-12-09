@@ -1,7 +1,7 @@
 #!/bin/bash
 cd ..
 
-composer install
+composer install --prefer-dist
 
 echo composer outdated packages:
 composer outdated
