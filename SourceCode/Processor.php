@@ -4,7 +4,7 @@
  *
  * @package   ConsumerProvider
  * @author    James John McGuire <jamesjohnmcguire@gmail.com>
- * @copyright 2021 James John McGuire <jamesjohnmcguire@gmail.com>
+ * @copyright 2021 - 2022 James John McGuire <jamesjohnmcguire@gmail.com>
  * @license   MIT https://opensource.org/licenses/MIT
  */
 
