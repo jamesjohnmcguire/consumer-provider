@@ -24,5 +24,11 @@ Issues
 packagist.org
 	https://packagist.org/packages/digitalzenworks/consumer-provider
 	https://packagist.org/api/update-package?username=jamesjohnmcguire
-consumer provider pattern
-	https://dzone.com/articles/producer-consumer-design
+Patterns
+	Strategy pattern and maybe the Builder pattern
+	Bridge Pattern.
+	Chain of Responsibility
+	Template patterns or Strategy patterns. The whole project would be an Adapter pattern.
+	design patterns import export
+	consumer provider pattern
+		https://dzone.com/articles/producer-consumer-design
