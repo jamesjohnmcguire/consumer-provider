@@ -26,9 +26,9 @@ interface ConsumerInterface
 	/**
 	 * Function process
 	 *
-	 * @param string $data The data for the consumer.
+	 * @param array $data The data to be consumed.
 	 *
 	 * @return void
 	 */
-	public function process(string $data);
+	public function process(?array $data): void;
 }

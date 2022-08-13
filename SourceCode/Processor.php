@@ -116,7 +116,9 @@ class Processor
 				{
 					include_once BASE_PATH . "/../$consumerName.php";
 					$consumer = new $consumerName();
-					$list = $provider->process($consumer);
+
+					$data = $provider->process();
+					$consumer->process($data);
 				}
 			}
 		}
