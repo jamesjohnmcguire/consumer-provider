@@ -2,6 +2,9 @@
 /**
  * Starter.php
  *
+ * Version:     1.1.0
+ * Author:      James John McGuire
+ * Author URI:  http://www.digitalzenworks.com/
  * PHP version  8.1.1
  *
  * @category  PHP
