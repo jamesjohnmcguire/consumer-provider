@@ -2,10 +2,14 @@
 /**
  * ProviderInterface.php
  *
+ * PHP version  8.1.1
+ *
+ * @category  PHP
  * @package   ConsumerProvider
  * @author    James John McGuire <jamesjohnmcguire@gmail.com>
  * @copyright 2021 - 2022 James John McGuire <jamesjohnmcguire@gmail.com>
  * @license   MIT https://opensource.org/licenses/MIT
+ * @link      https://github.com/jamesjohnmcguire/consumer-provider
  */
 
 declare(strict_types=1);
@@ -204,8 +208,9 @@ class Processor
 	 *
 	 * @return string The name of the class.
 	 */
-	private static function getImplementers(string $interface, string $file)
-		: string
+	private static function getImplementers(
+		string $interface,
+		string $file): string
 	{
 		$implementer = null;
 
@@ -228,8 +233,9 @@ class Processor
 	 *
 	 * @return void
 	 */
-	private static function showImplementers(string $name, array $implementers)
-		: string
+	private static function showImplementers(
+		string $name,
+		array $implementers): string
 	{
 		echo "available $name: ";
 		$first = true;
@@ -254,7 +260,7 @@ class Processor
 	 *
 	 * @return string The class of the consumer.
 	 */
-	private function getConsumer(string $consumerId) : string
+	private function getConsumer(string $consumerId): string
 	{
 		include_once $consumerId . '.php';
 		$consumer = new $consumerId();
@@ -269,7 +275,7 @@ class Processor
 	 *
 	 * @return string The class of the provider.
 	 */
-	private function getProvider(string $providerId) : string
+	private function getProvider(string $providerId): string
 	{
 		include_once $providerId . '.php';
 		$provider = new $providerId();
