@@ -17,6 +17,11 @@
 			"digitalzenworks\\ConsumerProvider\\": "SourceCode/"
 		}
 	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	},
 	"repositories": [
 		{
 			"type": "vcs",
@@ -25,16 +30,12 @@
 	],
 	"require": {},
 	"require-dev": {
-		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+		"dealerdirect/phpcodesniffer-composer-installer": "*",
 		"php-parallel-lint/php-parallel-lint": "^1.2.0",
 		"phpcompatibility/php-compatibility": "*",
-		"phpstan/phpstan": "^1.0",
-		"phpunit/phpunit": "^9.1",
+		"phpcsstandards/phpcsdevtools": "^1.0",
+		"phpstan/phpstan": "^1.2",
+		"phpunit/phpunit": "^9.5",
 		"squizlabs/php_codesniffer": "*"
-	},
-	"config": {
-		"allow-plugins": {
-			"dealerdirect/phpcodesniffer-composer-installer": true
-		}
 	}
 }
