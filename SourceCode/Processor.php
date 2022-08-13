@@ -204,7 +204,8 @@ class Processor
 	 *
 	 * @return string The name of the class.
 	 */
-	private static function getImplementers(string $interface, string $file) : string
+	private static function getImplementers(string $interface, string $file)
+		: string
 	{
 		$implementer = null;
 
@@ -227,7 +228,8 @@ class Processor
 	 *
 	 * @return void
 	 */
-	private static function showImplementers(string $name, array $implementers) : string
+	private static function showImplementers(string $name, array $implementers)
+		: string
 	{
 		echo "available $name: ";
 		$first = true;
