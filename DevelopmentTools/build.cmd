@@ -8,7 +8,7 @@ ECHO composer outdated packages:
 CALL composer outdated
 
 ECHO PHP code styles
-php vendor\bin\phpcs -sp --standard=ruleset.xml SourceCode
+php SourceCode\vendor\bin\phpcs -sp --standard=ruleset.xml SourceCode
 
 if "%1" == "release" GOTO release
 GOTO end

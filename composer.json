@@ -18,6 +18,7 @@
 		}
 	},
 	"config": {
+		"vendor-dir": "SourceCode/vendor",
 		"allow-plugins": {
 			"dealerdirect/phpcodesniffer-composer-installer": true
 		}
