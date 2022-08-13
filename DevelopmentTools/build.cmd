@@ -7,12 +7,8 @@ CALL composer install --prefer-dist
 ECHO composer outdated packages:
 CALL composer outdated
 
-CD SourceCode
-
 ECHO PHP code styles
-CALL ..\vendor\bin\phpcs -sp --standard=ruleset.xml .
-
-CD ..
+php vendor\bin\phpcs -sp --standard=ruleset.xml SourceCode
 
 if "%1" == "release" GOTO release
 GOTO end
