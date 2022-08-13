@@ -166,7 +166,7 @@ class Processor
 				}
 				elseif ($token === ';')
 				{
- 					// If the token is the semicolon, then we're done with
+					// If the token is the semicolon, then we're done with
 					// the namespace declaration.
 					$gettingNamespace = false;
 				}
