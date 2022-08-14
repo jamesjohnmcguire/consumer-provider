@@ -17,7 +17,7 @@ GOTO end
 ECHO Release
 
 REM Currently, not working on windows - phpdocumentor bug
-REM CALL phpdocumentor --setting=graphs.enabled=true -d SourceCode -t Documentation
+REM CALL phpdocumentor --setting=graphs.enabled=true -d SourceCode -t Documentation --ignore "SourceCode/vendor/"
 
 if "%~2"=="" GOTO error1
 if "%~3"=="" GOTO error2

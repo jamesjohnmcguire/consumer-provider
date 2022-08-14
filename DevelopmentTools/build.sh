@@ -18,7 +18,7 @@ if [[ $1 == "release" ]] ; then
 	echo "release Is set!"
 
 	rm -rf Documentation
-	phpDocumentor.phar --setting="graphs.enabled=true" -d SourceCode -t Documentation
+	phpDocumentor.phar --setting="graphs.enabled=true" -d SourceCode -t Documentation --ignore "SourceCode/vendor/"
 
 	if [ -z "$2" ]
 	then
