@@ -108,7 +108,7 @@ class Processor
 	public function process()
 	{
 		echo "Processing...\r\n";
-		$clientPath = realpath(BASE_PATH . "/../../../..");
+		$clientPath = realpath(BASE_PATH . '/../../../..');
 
 		if (empty($this->providers) === false)
 		{
