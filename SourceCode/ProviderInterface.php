@@ -29,9 +29,7 @@ interface ProviderInterface
 	/**
 	 * Function process
 	 *
-	 * @param string $consumer The name of the consumer interface.
-	 *
 	 * @return array
 	 */
-	public function process(string $consumer): ?array;
+	public function process(): ?array;
 }
