@@ -108,16 +108,21 @@ class Processor
 	public function process()
 	{
 		echo "Processing...\r\n";
+		$clientPath = realpath(BASE_PATH . "/../../../..");
+
 		if (empty($this->providers) === false)
 		{
 			foreach ($this->providers as $providerName)
 			{
-				include_once BASE_PATH . "/../$providerName.php";
+				$providerFilePath = $clientPath . '/' . $providerName . '.php';
+				include_once "$providerFilePath";
 				$provider = new $providerName();
 
 				foreach ($this->consumers as $consumerName)
 				{
-					include_once BASE_PATH . "/../$consumerName.php";
+					$consumerFilePath =
+						$clientPath . '/' . $consumerName . '.php';
+					include_once "$consumerFilePath";
 					$consumer = new $consumerName();
 
 					$data = $provider->process();
