@@ -38,7 +38,7 @@
 	},
 	"bin":
 	[
-		"process"
+		"dzwcp-process"
 	],
 	"config":
 	{
