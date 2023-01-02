@@ -16,7 +16,7 @@
 	],
 	"name": "digitalzenworks/consumer-provider",
 	"homepage": "https://github.com/jamesjohnmcguire/consumer-provider/",
-    "keywords": [ "consumer", "provider", "pattern" ],
+	"keywords": [ "consumer", "provider", "pattern" ],
 	"license": "MIT",
 	"minimum-stability": "dev",
 	"prefer-stable": true,
