@@ -1,3 +1,3 @@
 cd %~dp0
 
-CALL vendor\digitalzenworks\consumer-provider\SourceCode\process.cmd OldDatabase WordPressDatabase
+php vendor\bin\dzwcp-process OldDatabase WordPressDatabase

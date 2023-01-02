@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "48d27153ec842520e04e506c7f4043fb",
+    "content-hash": "a0693a9c9bb75eaf3a09d5f19beb90b1",
     "packages": [
         {
             "name": "digitalzenworks/consumer-provider",
-            "version": "1.0.6",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jamesjohnmcguire/consumer-provider.git",
-                "reference": "73ff4ad867ee3c00bd5bc0ec566bea75d5b8d899"
+                "reference": "1dd8c89376b9e6b843990f86f7a47bcbedbabcf1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jamesjohnmcguire/consumer-provider/zipball/73ff4ad867ee3c00bd5bc0ec566bea75d5b8d899",
-                "reference": "73ff4ad867ee3c00bd5bc0ec566bea75d5b8d899",
+                "url": "https://api.github.com/repos/jamesjohnmcguire/consumer-provider/zipball/1dd8c89376b9e6b843990f86f7a47bcbedbabcf1",
+                "reference": "1dd8c89376b9e6b843990f86f7a47bcbedbabcf1",
                 "shasum": ""
             },
             "require-dev": {
@@ -25,8 +25,8 @@
                 "php-parallel-lint/php-parallel-lint": "^1.2.0",
                 "phpcompatibility/php-compatibility": "*",
                 "phpcsstandards/phpcsdevtools": "^1.0",
-                "phpstan/phpstan": "^0.12.87",
-                "phpunit/phpunit": "^9.1",
+                "phpstan/phpstan": "^1.2",
+                "phpunit/phpunit": "^9.5",
                 "squizlabs/php_codesniffer": "*"
             },
             "type": "library",
@@ -46,11 +46,18 @@
                 }
             ],
             "description": "A package providing an interface to allow a provider object to feed a consumer object.",
+            "homepage": "https://github.com/jamesjohnmcguire/consumer-provider/",
             "support": {
                 "issues": "https://github.com/jamesjohnmcguire/consumer-provider/issues",
-                "source": "https://github.com/jamesjohnmcguire/consumer-provider/tree/1.0.6"
+                "source": "https://github.com/jamesjohnmcguire/consumer-provider/tree/1.2.2"
             },
-            "time": "2021-09-17T10:55:58+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/jamesjohnmcguire",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-01-01T11:55:40+00:00"
         }
     ],
     "packages-dev": [],
@@ -61,5 +68,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.3.0"
 }
