@@ -1,27 +1,54 @@
 {
-	"description": "A package providing an interface to allow a provider object to feed a consumer object.",
-	"name": "digitalzenworks/consumer-provider",
-	"homepage": "https://github.com/jamesjohnmcguire/consumer-provider/",
-	"license": "MIT",
-	"minimum-stability": "dev",
-	"prefer-stable": true,
-	"type": "library",
-	"authors": [
+	"authors":
+	[
 		{
 			"name": "James John McGuire",
 			"email": "jamesjohnmcguire@gmail.com"
 		}
 	],
-	"autoload": {
-		"psr-4": {
+	"description": "A package providing an interface to allow a provider object to feed a consumer object.",
+	"funding":
+	[
+		{
+			"type": "github",
+			"url": "https://github.com/sponsors/jamesjohnmcguire"
+		}
+	],
+	"name": "digitalzenworks/consumer-provider",
+	"homepage": "https://github.com/jamesjohnmcguire/consumer-provider/",
+	"keywords": [ "consumer", "provider", "pattern" ],
+	"license": "MIT",
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"support":
+	{
+		"issues": "https://github.com/jamesjohnmcguire/consumer-provider/issues"
+	},
+	"type": "library",
+	"autoload":
+	{
+		"classmap":
+		[
+			"SourceCode/"
+		],
+		"psr-4":
+		{
 			"digitalzenworks\\ConsumerProvider\\": "SourceCode/"
 		}
 	},
-	"config": {
-		"vendor-dir": "SourceCode/vendor",
-		"allow-plugins": {
+	"bin":
+	[
+		"process"
+	],
+	"config":
+	{
+		"allow-plugins":
+		{
 			"dealerdirect/phpcodesniffer-composer-installer": true
-		}
+		},
+		"optimize-autoloader": true,
+		"sort-packages": true,
+		"vendor-dir": "SourceCode/vendor"
 	},
 	"repositories": [
 		{

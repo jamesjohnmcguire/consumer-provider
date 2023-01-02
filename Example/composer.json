@@ -1,5 +1,9 @@
 {
-    "require": {
-        "digitalzenworks/consumer-provider": "^1.0"
-    }
+	"description": "A package providing an interface to allow a provider object to feed a consumer object.",
+	"name": "digitalzenworks/consumer-provider-example",
+	"license": "MIT",
+	"require":
+	{
+		"digitalzenworks/consumer-provider": "^1.0"
+	}
 }
