@@ -2,8 +2,9 @@
 	"description": "A package providing an interface to allow a provider object to feed a consumer object.",
 	"name": "digitalzenworks/consumer-provider-example",
 	"license": "MIT",
+	"prefer-stable": false,
 	"require":
 	{
-		"digitalzenworks/consumer-provider": "^1.0"
+		"digitalzenworks/consumer-provider": "^1.2.3-alpha"
 	}
 }

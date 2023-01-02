@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a0693a9c9bb75eaf3a09d5f19beb90b1",
+    "content-hash": "9d4e5e28a82c84a6f8ebb74b68b08dcc",
     "packages": [
         {
             "name": "digitalzenworks/consumer-provider",
-            "version": "1.2.2",
+            "version": "1.2.5-beta",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jamesjohnmcguire/consumer-provider.git",
-                "reference": "1dd8c89376b9e6b843990f86f7a47bcbedbabcf1"
+                "reference": "4b2efe2b30cc3c09e0f5feabab51c6de0122937e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jamesjohnmcguire/consumer-provider/zipball/1dd8c89376b9e6b843990f86f7a47bcbedbabcf1",
-                "reference": "1dd8c89376b9e6b843990f86f7a47bcbedbabcf1",
+                "url": "https://api.github.com/repos/jamesjohnmcguire/consumer-provider/zipball/4b2efe2b30cc3c09e0f5feabab51c6de0122937e",
+                "reference": "4b2efe2b30cc3c09e0f5feabab51c6de0122937e",
                 "shasum": ""
             },
             "require-dev": {
@@ -29,11 +29,17 @@
                 "phpunit/phpunit": "^9.5",
                 "squizlabs/php_codesniffer": "*"
             },
+            "bin": [
+                "dzwcp-process"
+            ],
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "digitalzenworks\\ConsumerProvider\\": "SourceCode/"
-                }
+                },
+                "classmap": [
+                    "SourceCode/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -47,23 +53,30 @@
             ],
             "description": "A package providing an interface to allow a provider object to feed a consumer object.",
             "homepage": "https://github.com/jamesjohnmcguire/consumer-provider/",
+            "keywords": [
+                "consumer",
+                "pattern",
+                "provider"
+            ],
             "support": {
                 "issues": "https://github.com/jamesjohnmcguire/consumer-provider/issues",
-                "source": "https://github.com/jamesjohnmcguire/consumer-provider/tree/1.2.2"
+                "source": "https://github.com/jamesjohnmcguire/consumer-provider/tree/1.2.5-beta"
             },
             "funding": [
                 {
-                    "url": "https://github.com/jamesjohnmcguire",
+                    "url": "https://github.com/sponsors/jamesjohnmcguire",
                     "type": "github"
                 }
             ],
-            "time": "2023-01-01T11:55:40+00:00"
+            "time": "2023-01-02T13:44:44+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "digitalzenworks/consumer-provider": 15
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
