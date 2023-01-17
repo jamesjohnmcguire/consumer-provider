@@ -3,16 +3,11 @@ require_once "vendor/digitalzenworks/consumer-provider/SourceCode/ConsumerInterf
 
 class WordPressDatabase implements digitalzenworks\ConsumerProvider\ConsumerInterface
 {
-	private $newDatabase = null;
-
 	public function __construct()
 	{
-		$this->newDatabase = new DatabaseLibrary(
-			'localhost', 'example_wp_database', 'example_user',
-			'example_password');
 	}
 
-	public function Process($articles)
+	public function Process(?array $articles) : void
 	{
 		$item = null;
 
@@ -22,8 +17,6 @@ class WordPressDatabase implements digitalzenworks\ConsumerProvider\ConsumerInte
 			{
 				// Insert into new database
 			}
-			}
-
-		return $item;
+		}
 	}
 }
