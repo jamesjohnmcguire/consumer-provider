@@ -114,14 +114,17 @@ class Processor
 		{
 			foreach ($this->providers as $providerName)
 			{
-				$providerFilePath = $clientPath . '/' . $providerName . '.php';
+				$providerFileName = $this->getClassBaseName($providerName);
+				$providerFilePath =
+					$clientPath . '/' . $providerFileName . '.php';
 				include_once "$providerFilePath";
 				$provider = new $providerName();
 
 				foreach ($this->consumers as $consumerName)
 				{
+					$consumerFileName = $this->getClassBaseName($consumerName);
 					$consumerFilePath =
-						$clientPath . '/' . $consumerName . '.php';
+						$clientPath . '/' . $consumerFileName . '.php';
 					include_once "$consumerFilePath";
 					$consumer = new $consumerName();
 
@@ -261,6 +264,16 @@ class Processor
 		}
 
 		echo EOL;
+	}
+
+	private function getClassBaseName(string $classNamespace) : string
+	{
+		$classParts = explode('\\', $classNamespace);
+
+		$length = count($classParts);
+		$baseClass = $classParts[$length - 1];
+
+		return $baseClass;
 	}
 
 	/**
