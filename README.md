@@ -6,7 +6,7 @@ This is a useful package for copying data to and from 2 disparate data stores.  
 composer require digitalzenworks/consumer-provider
 
 ## Usage:
-vendor/digitalzenworks/consumer-provider/SourceCode/process &lt;Consumer Class Name&gt; &lt;Provider Class Name&gt;
+php vendor\bin\dzwcp-process Some\Namespace\ProviderClass Some\Namespace\ConsumerClass
 
 ## Example:
 There is an example in the Example directory.
