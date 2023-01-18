@@ -1,7 +1,7 @@
 Tasks
 	PHP Parse error:  syntax error, unexpected token "public", expecting end of file in vendor\squizlabs\php_codesniffer\src\Standards\PEAR\Tests\Commenting\FunctionCommentUnitTest.inc on line 380
-	PHP Warning:  require_once(Processor.php): Failed to open stream: No such file or directory in \ConsumerProvider\Example\vendor\digitalzenworks\consumer-provider\dzwcp-process on line 23
 	Tasks Finished
+		PHP Warning:  require_once(Processor.php): Failed to open stream: No such file or directory in \ConsumerProvider\Example\vendor\digitalzenworks\consumer-provider\dzwcp-process on line 23
 		move actual source code to SourceCode
 		Update composer.json to use SourceCode
 		Add namespaces
