@@ -10,7 +10,7 @@
  * @category  PHP
  * @package   ConsumerProvider
  * @author    James John McGuire <jamesjohnmcguire@gmail.com>
- * @copyright 2021 - 2023 James John McGuire <jamesjohnmcguire@gmail.com>
+ * @copyright 2021 - 2026 James John McGuire <jamesjohnmcguire@gmail.com>
  * @license   MIT https://opensource.org/licenses/MIT
  * @link      https://github.com/jamesjohnmcguire/consumer-provider
  */
