@@ -34,3 +34,8 @@ Patterns
 	design patterns import export
 	consumer provider pattern
 		https://dzone.com/articles/producer-consumer-design
+ConsumerProducer
+	https://dzone.com/articles/producer-consumer-design
+	[jamesjohnmcguire/consumer-provider] Run failed: PHP Composer - main (1c8112f)	2026-01-01
+	https://github.blog/changelog/2024-12-05-notice-of-upcoming-releases-and-breaking-changes-for-github-actions/#actions-cache-v1-v2-and-actions-toolkit-cache-package-closing-down
+	https://github.com/actions/runner-images/issues/10636
