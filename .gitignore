@@ -1,2 +1,5 @@
-.phpdoc/cache/
-vendor/
+/.phpdoc/cache/
+/.vscode/
+/vendor/
+
+*.code-workspace
