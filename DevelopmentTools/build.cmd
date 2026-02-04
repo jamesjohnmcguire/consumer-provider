@@ -1,14 +1,29 @@
+@ECHO OFF
+
 CD %~dp0
 CD ..
 
-CALL composer validate --strict
+ECHO Checking Composer...
 CALL composer install --prefer-dist
+CALL composer validate --strict
+ECHO Outdated:
+CALL composer outdated --direct
 
-ECHO composer outdated packages:
-CALL composer outdated
+ECHO .
+ECHO Checking code syntax...
+CALL vendor/bin/parallel-lint --exclude .git --exclude Support --exclude vendor .
 
-ECHO PHP code styles
-php SourceCode\vendor\bin\phpcs -sp --standard=ruleset.xml SourceCode
+ECHO .
+ECHO Code Analysis...
+CALL vendor\bin\phpstan.phar.bat analyse
+
+ECHO .
+ECHO Checking Code Styles...
+CALL vendor\bin\phpcs.bat -sp --standard=ruleset.xml SourceCode
+CALL vendor\bin\phpcs.bat -sp --standard=ruleset.tests.xml Tests
+
+ECHO Running Automated Tests
+CALL vendor\bin\phpunit.bat --config Tests\phpunit.xml
 
 if "%1" == "release" GOTO release
 GOTO end

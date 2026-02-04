@@ -1,18 +1,30 @@
 #!/bin/bash
+
+cd "$(dirname "${BASH_SOURCE[0]}")"
 cd ..
 
-composer validate --strict
+echo Checking Composer...
 composer install --prefer-dist
+composer validate --strict
+echo Outdated:
+composer outdated --direct
 
-echo composer outdated packages:
-composer outdated
+echo
+echo Checking Code Syntax...
+vendor/bin/parallel-lint --exclude .git --exclude vendor .
 
-cd SourceCode
+echo
+echo Code Analysis...
+vendor/bin/phpstan.phar analyse
 
-echo PHP code styles
-../vendor/bin/phpcs -sp --standard=ruleset.xml .
+echo
+echo Checking Code Styles...
+vendor/bin/phpcs -sp --standard=ruleset.xml SourceCode
+vendor/bin/phpcs -sp --standard=ruleset.tests.xml Tests
 
-cd ..
+echo
+echo Running Automated Tests
+vendor/bin/phpunit --configuration Tests/phpunit.xml
 
 if [[ $1 == "release" ]] ; then
 	echo "release Is set!"

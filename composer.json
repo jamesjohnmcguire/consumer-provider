@@ -1,5 +1,12 @@
 {
 	"name": "digitalzenworks/consumer-provider",
+	"description": "A package providing an interface to allow a provider object to feed a consumer object.",
+	"homepage": "https://github.com/jamesjohnmcguire/consumer-provider/",
+	"keywords": [ "consumer", "provider", "pattern" ],
+	"license": "MIT",
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"type": "library",
 	"authors":
 	[
 		{
@@ -7,7 +14,6 @@
 			"email": "jamesjohnmcguire@gmail.com"
 		}
 	],
-	"description": "A package providing an interface to allow a provider object to feed a consumer object.",
 	"funding":
 	[
 		{
@@ -15,9 +21,6 @@
 			"url": "https://github.com/sponsors/jamesjohnmcguire"
 		}
 	],
-	"homepage": "https://github.com/jamesjohnmcguire/consumer-provider/",
-	"keywords": [ "consumer", "provider", "pattern" ],
-	"license": "MIT",
 	"support":
 	{
 		"issues": "https://github.com/jamesjohnmcguire/consumer-provider/issues"
@@ -41,11 +44,12 @@
 	{
 		"allow-plugins":
 		{
-			"dealerdirect/phpcodesniffer-composer-installer": true
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"phpstan/extension-installer": true
 		},
 		"optimize-autoloader": true,
-		"sort-packages": true,
-		"vendor-dir": "SourceCode/vendor"
+		"process-timeout": 0,
+		"sort-packages": true
 	},
 	"repositories": [
 		{
@@ -53,17 +57,26 @@
 			"url": "https://github.com/jamesjohnmcguire/consumer-provider"
 		}
 	],
-	"minimum-stability": "dev",
-	"prefer-stable": true,
-	"type": "library",
-	"require": {},
+	"require":
+	{
+		"php": "^7.4 || ^8.0"
+	},
 	"require-dev": {
 		"dealerdirect/phpcodesniffer-composer-installer": "*",
+		"php-parallel-lint/php-console-highlighter": "^1.0",
 		"php-parallel-lint/php-parallel-lint": "^1.2.0",
 		"phpcompatibility/php-compatibility": "*",
 		"phpcsstandards/phpcsdevtools": "^1.0",
-		"phpstan/phpstan": "^1.2",
-		"phpunit/phpunit": "^9.5",
+		"phpcsstandards/phpcsextra": "^1.2.0",
+		"phpmd/phpmd": "^2.15",
+		"phpstan/extension-installer": "^1.4",
+		"phpstan/phpstan": "^2.1",
+		"phpstan/phpstan-deprecation-rules": "^2.0",
+		"phpunit/phpunit": "^11.0 || ^12.0",
+		"roave/security-advisories": "dev-master",
 		"squizlabs/php_codesniffer": "*"
+	},
+	"scripts": {
+		"test": "vendor/bin/phpunit --configuration Tests/phpunit.xml"
 	}
 }
